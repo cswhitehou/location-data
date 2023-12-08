@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/accuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/compassDirectionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compass Direction: "
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/ssid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SSID: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/bssid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BSSID: "
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/signalStrength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Signal Strength: " />
+
+
+
+    <EditText
+        android:id="@+id/placeNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Place Name" />
+
+    <Button
+        android:id="@+id/logButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Place"
+        android:onClick="onLogPlaceClick" />
+
+    <TextView
+        android:id="@+id/logOutputTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp" />
+
+
+    <TextView
+        android:id="@+id/mostRecentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Most Recent Location:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/fileNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter File Name" />
+
+    <Button
+        android:id="@+id/exportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Export Data to CSV" />
+
+    <EditText
+        android:id="@+id/filePlaceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter File Name" />
+
+    <Button
+        android:id="@+id/exportPlaceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Export Places to CSV" />
+
+
+
+
+</LinearLayout>
